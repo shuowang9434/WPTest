@@ -7,4 +7,4 @@ Created on Sun Mar  9 21:08:38 2025
 
 import streamlit as st
 
-st.write("# This page contains *Figures*")
+st.title("This page show your models")

@@ -7,5 +7,5 @@ Created on Sun Mar  9 21:08:15 2025
 
 import streamlit as st
 
-st.title("# This page contains *Text*")
+st.title("This page contains other information")
 

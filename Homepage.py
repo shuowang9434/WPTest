@@ -57,19 +57,30 @@ col3.image('Lisbon.jpg', caption='Qi Tang', width=400)
 
 
 cc1, cc2, cc3 = col3.columns(3)
-# cc1.link_button("GitHub", "https://github.com/qiqi1023t")
-# cc3.link_button("Google Scholar", "https://scholar.google.com/citations?user=xUIF4CQAAAAJ&hl=en")
-# cc2.link_button("LinkedIn", "https://www.linkedin.com/in/qi-tang-a0601822/")
+cc1.link_button("GitHub", "https://github.com/qiqi1023t")
+cc3.link_button("Google Scholar", "https://scholar.google.com/citations?user=xUIF4CQAAAAJ&hl=en")
+cc2.link_button("LinkedIn", "https://www.linkedin.com/in/qi-tang-a0601822/")
 
 
-button_html = """
-<a href="https://github.com/qiqi1023t" target="_blank">
-  <img src='icons/github.png' alt="Button Image" style="width:100px;height:50px;">
-</a>
-"""
 
-cc1.markdown(button_html, unsafe_allow_html=True)
-cc2.image('icons/github.png')
+col3.subheader("Address")
+
+col3.write('''
+           Centre d’hydrogéologie et de géothermie (CHYN) \n
+           Bureau E316\n
+           Rue Emile-Argand 11\n
+           2000 Neuchâtel
+           ''')
+
+
+# button_html = """
+# <a href="https://github.com/qiqi1023t" target="_blank">
+#   <img src='icons/github.png' alt="Button Image" style="width:100px;height:50px;">
+# </a>
+# """
+
+# cc1.markdown(button_html, unsafe_allow_html=True)
+#cc2.image('icons/github.png')
 
 # try:
 #     image = Image.open("icons/github.png") # Replace with the correct path
